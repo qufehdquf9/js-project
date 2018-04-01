@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.calendar{
+    background-color:red;
+    font-size: 30px;
+    height: 50vh;
+    text-align: center;
+    
+}
+.flexbox{
+    background-color:green;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    height: 30vh;
+}
+.nav1{
+    background-color:yellow;
+    width: 33.33%;
+}
+.nav2{
+    background-color:orange;
+    width: 33.33%;
+}
+.nav3{
+    background-color:pink;
+    width: 33.33%;
+}
+
+.issue{
+    background-color:blue;
+    height: 20vh;
+}
+.hospital{
+    background-color:whitesmoke;
+    height: 50vh;
+}
+.community{
+    background-color:deeppink;
+    height: 50vh;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
