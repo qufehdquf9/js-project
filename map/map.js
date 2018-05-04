@@ -17,6 +17,7 @@ function initMap() {
       stylers: [{ visibility: 'off' }]
     }]
   });
+  
   var infoWindow1 = new google.maps.InfoWindow({map: map});
 
   // Try HTML5 geolocation.
