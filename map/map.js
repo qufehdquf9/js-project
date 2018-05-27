@@ -9,7 +9,7 @@ var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 35.140, lng: 129.100},
-            zoom: 14,
+            zoom: 15,
     styles: [{
       stylers: [{ visibility: 'simplified' }]
     }, {
@@ -30,6 +30,8 @@ function initMap() {
 
       infoWindow1.setPosition(pos);
       infoWindow1.setContent('나의 위치');
+
+      
       map.setCenter(pos);
     }, function() {
       handleLocationError(true, infoWindow1, map.getCenter());
@@ -68,7 +70,6 @@ function callback(results, status) {
     return;
   }
   for (var i = 0, result; result = results[i]; i++) {
-    console.log(result,result.name);
     addMarker(result);
   }
 }
@@ -86,6 +87,7 @@ function addMarker(place) {
         console.error(status);
         return;
       }
+      console.log(place.geometry.location);
       infoWindow.setContent(result.name);
       infoWindow.open(map, marker);
     });
